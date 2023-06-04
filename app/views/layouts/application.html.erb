@@ -33,14 +33,14 @@
         <% if @current_user != nil %>
           Logged in as: <%= @current_user["username"] %>
 
-          <a href="/logout">Logout</a>
+          <a href="/logout"></a>
         <% else %>
           <a href="/sessions/new"></a>
           
-          <a href="/users/new">Sign Up</a>
+          <a href="/users/new"></a>
         <% end %>
       </p>
-        <a href="/">Home</a>
+        <a href="/"></a>
       
       <p>
         <%= flash["notice"] %>
